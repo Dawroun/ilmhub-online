@@ -29,4 +29,101 @@
 */
 
 /*----------------------01. =google fonts-----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/*----------------------02. =variables-----------------*/
 
+:root {
+  --orange: hsl(36, 80%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --WHITE: hsl(0, 0%, 100%);
+  --BLACK: hsl(0, 0%, 0%);
+  --black-90: hsl(0, 0%, 10%);
+  --black-70: hsl(0, 0%, 30%);
+  --black-alpha-40: hsl(0, 0%, 0%, 0.4);
+  --yellow-light: hsl(44, 95%, 83%);
+  --green-light: hsl(158, 68%, 75%);
+  --red-light: hsl(0, 84%, 80%);
+  --orange-light: hsl(22, 85%, 80%);
+  --select-box-bg-color: hsl(0, 0%, 100%);
+  --border-color-1: hsl(0, 0%, 90%);
+}
+
+/*------------------------------    =base   ------------------------*/
+body {
+  background-color: var(--body-bg-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--black-70);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--main-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: var(--WHITE);
+  background-color: var(--main-color);
+}
+
+/*--------------------------- 19. =header ---------------------*/
+.header {
+  border-bottom: 1px solid var(--border-color-2);
+}
+
+.header-logo a {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--black-70);
+}
+
+.header-logo span {
+  color: #fff;
+  background: rgb(195, 219, 231);
+  background: linear-gradient(
+    56deg,
+    rgba(195, 219, 231, 1) 0%,
+    rgba(26, 116, 195, 1) 57%,
+    rgba(3, 10, 18, 1) 100%
+  );
+  padding: 3px 7px 3px 7px;
+  border-radius: 15px;
+  margin-right: 3px;
+}
+
+.header .menu-item {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.header .menu-item > a {
+  display: block;
+  padding: 24px 0;
+  font-weight: 400;
+  color: var(--black-90);
+  text-transform: capitalize;
+}
+
+.header-backdrop,
+.header-close-btn,
+.header-hamburger-btn {
+  display: none;
+}
