@@ -83,13 +83,41 @@ ul {
   background-color: var(--main-color);
 }
 
+/*--------------------------- 11. =circular img ---------------------*/
+.circular-img {
+  max-width: 360px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.circular-img-inner {
+  text-align: center;
+  border-radius: 0 0 180px 180px;
+  overflow: hidden;
+}
+
+.circular-img-circle {
+  height: 360px;
+  width: 360px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+}
+
+.circular-img img {
+  position: relative;
+  z-index: 1;
+}
+
 /*--------------------------- 19. =header ---------------------*/
 .header {
   border-bottom: 1px solid var(--border-color-2);
 }
 
 .header-logo a {
-  font-size: 26px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--black-70);
@@ -104,8 +132,8 @@ ul {
     rgba(26, 116, 195, 1) 57%,
     rgba(3, 10, 18, 1) 100%
   );
-  padding: 10px;
-  border-radius: 50%;
+  padding: 5px;
+  border-radius: 10px;
   margin-right: 3px;
 }
 
@@ -124,8 +152,13 @@ ul {
   transition: color 0.3s ease;
 }
 
-.header .menu-item > a {
-  font-size: 13px;
+.header .sub-menu-item a:hover,
+.header .menu-item:hover > a {
+  color: var(--main-color);
+}
+
+.header .menu-item > a i {
+  font-size: 16px;
   margin-left: 3px;
   pointer-events: none;
 }
@@ -138,10 +171,64 @@ ul {
   width: 210px;
   padding: 10px 0;
   border-radius: 5px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+}
+@media (min-width: 992px) {
+  .header .menu-item:hover > .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header .sub-menu-item a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--black-90);
+  text-transform: capitalize;
+  font-weight: 400;
+  transition: color 0.3s ease;
 }
 
 .header-backdrop,
 .header-close-btn,
 .header-hamburger-btn {
   display: none;
+}
+
+/* --------------- 06. =customized bootstrap classes --------- */
+
+.container {
+  --bs-gutter-x: 15px;
+  max-width: 1140px;
+}
+
+.row {
+  --bs-gutter-x: 30px;
+}
+
+/* ---------------- 21. =banner section ----------------- */
+
+.banner-section {
+  padding: 80px 0;
+  min-height: 680px;
+}
+
+.banner-txt h2 {
+  font-size: 20px;
+  color: #344cb7;
+}
+
+.banner-txt h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.banner-section .circular-img-circle {
+  background-color: var(--main-color);
 }
