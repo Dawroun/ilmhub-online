@@ -84,6 +84,44 @@ ul {
 }
 
 /*--------------------------- 19. =header ---------------------*/
+.header {
+  border-bottom: 1px solid var(--border-color-2);
+}
+
+.header-logo a {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--black-70);
+}
+
+.header-logo span {
+  color: #fff;
+  background: rgb(195, 219, 231);
+  background: linear-gradient(
+    56deg,
+    rgba(195, 219, 231, 1) 0%,
+    rgba(26, 116, 195, 1) 57%,
+    rgba(3, 10, 18, 1) 100%
+  );
+  padding: 3px 7px 3px 7px;
+  border-radius: 15px;
+  margin-right: 3px;
+}
+
+.header .menu-item {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.header .menu-item > a {
+  display: block;
+  padding: 24px 0;
+  font-weight: 400;
+  color: var(--black-90);
+  text-transform: capitalize;
+}
+
 .header-backdrop,
 .header-close-btn,
 .header-hamburger-btn {
