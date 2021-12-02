@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title> Ilmhub </title>
+  <title> Ilmhub</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/font-awesome.css">
@@ -18,7 +18,7 @@
     <!---------------header start-------------->
     <header class="header">
       <div class="container">
-        <div class="header main">
+        <div class="header main d-flex justify-content-between align-items-center">
           <div class="header-logo">
             <a href="index.html"><span>Ilm</span>Hub </a>
           </div>
@@ -32,7 +32,13 @@
             </button>
             <ul class="menu">
               <li class="menu-item"><a href="index.html">home</a></li>
-              <li class="menu-item"><a href="#">courses </a></li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" class="js-toggle-sub-menu">courses <i class="fas fa-chevron-down"> </i></a>
+                <ul class="sub-menu js-sub-menu">
+                  <li class="sub-meu-item"><a href="courses.html">course</a></li>
+                  <li class="sub-meu-item"><a href="course-detail.html">course detail</a></li>
+                </ul>
+              </li>
               <li class="menu-item"><a href="#">pages</a></li>
               <li class="menu-item"><a href="contact.html">contact</a></li>
             </ul>

@@ -104,14 +104,15 @@ ul {
     rgba(26, 116, 195, 1) 57%,
     rgba(3, 10, 18, 1) 100%
   );
-  padding: 3px 7px 3px 7px;
-  border-radius: 15px;
+  padding: 10px;
+  border-radius: 50%;
   margin-right: 3px;
 }
 
 .header .menu-item {
   display: inline-block;
   margin-left: 40px;
+  position: relative;
 }
 
 .header .menu-item > a {
@@ -120,6 +121,23 @@ ul {
   font-weight: 400;
   color: var(--black-90);
   text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+
+.header .menu-item > a {
+  font-size: 13px;
+  margin-left: 3px;
+  pointer-events: none;
+}
+
+.header .sub-menu {
+  position: absolute;
+  top: 100%;
+  background-color: var(--white);
+  left: 0;
+  width: 210px;
+  padding: 10px 0;
+  border-radius: 5px;
 }
 
 .header-backdrop,
