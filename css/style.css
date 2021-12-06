@@ -257,3 +257,18 @@ h6 {
 .banner-section .circular-img-circle {
   background-color: var(--main-color);
 }
+
+/* ---------------- 22. =fun facts section ----------------- */
+.fun-facts-item {
+  padding: 15px 0;
+}
+
+.fun-facts-item h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.fun-facts-item p {
+  margin: 0;
+  text-transform: uppercase;
+}
