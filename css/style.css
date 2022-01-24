@@ -23,6 +23,7 @@
 22. =fun facts section
 23. =course section
 24. =testimonials sectrion
+
 25. =bai section
 26. =course details section
 27. =contact section
@@ -97,6 +98,17 @@ h3 {
   background-color: var(--main-color);
 }
 
+/* ----------------------- 07 Animation keyframes------------- */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* -------------------------- 09. =buttons ----------------- */
 
 .btn-theme {
@@ -148,7 +160,18 @@ h3 {
 
 /*--------------------------- 19. =header ---------------------*/
 .header {
-  background-color: #0b058b;
+  border-bottom: 1px solid var(--border-color-2);
+}
+
+.header-logo a {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--black-70);
+}
+
+.header-logo span {
+  color: var(--main-color);
 }
 
 .header-logo .logo-img {
@@ -168,7 +191,7 @@ h3 {
   display: block;
   padding: 24px 0;
   font-weight: 400;
-  color: var(--white);
+  color: var(--black-90);
   text-transform: capitalize;
   transition: color 0.3s ease;
 }
@@ -179,7 +202,7 @@ h3 {
 }
 
 .header .menu-item > a i {
-  font-size: 16px;
+  font-size: 13 px;
   margin-left: 3px;
   pointer-events: none;
 }
@@ -224,7 +247,7 @@ h3 {
 
 /* --------------- 05. =box ---------------- */
 .box {
-  background-color: var(--whit);
+  background-color: var(--white);
   border-radius: 5px;
   box-shadow: var(--shadow);
   padding: 30px;
@@ -280,7 +303,7 @@ h3 {
 }
 
 .banner-section .circular-img-circle {
-  background-color: #0b058b;
+  background-color: var(--red-light);
 }
 
 /* ---------------- 22. =fun facts section ----------------- */
@@ -296,6 +319,19 @@ h3 {
 .fun-facts-item p {
   margin: 0;
   text-transform: uppercase;
+}
+
+.fun-facts-item .style-1 {
+  color: var(--black-70);
+}
+.fun-facts-item .style-2 {
+  color: var(--green-light);
+}
+.fun-facts-item .style-3 {
+  color: var(--red-light);
+}
+.fun-facts-item .style-4 {
+  color: var(--orange-light);
 }
 
 /* ---------------- 23. =courses section ----------------- */
@@ -329,8 +365,6 @@ h3 {
   margin: 0 0 12px;
 }
 
-
-
 .courses-item .instructor img {
   width: 30px;
   border-radius: 50%;
@@ -357,4 +391,56 @@ h3 {
   font-weight: 600;
   padding: 4px 8px;
   border-radius: 4px;
+}
+
+/* ---------------- 24. =testimonials section ----------------- */
+
+.testimonials-section .img-box {
+  height: 150px;
+  width: 150px;
+  background-color: var(--red-light);
+  margin: 30px auto 50px;
+}
+
+.testimonials-section .img-box::before,
+.testimonials-section .img-box::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--red-light);
+  animation: spin 15s linear infinite;
+}
+
+.testimonials-section .img-box::before {
+  height: 180px;
+  width: 180px;
+  left: -15px;
+  top: -15px;
+  border-left: 1px solid transparent;
+}
+.testimonials-section .img-box::after {
+  height: 210px;
+  width: 210px;
+  left: -30px;
+  top: -30px;
+  border-right: 1px solid transparent;
+}
+
+.testimonials-item h3 {
+  text-transform: capitalize;
+}
+.testimonials-item .text-2 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.testimonials-section .carousel-control-prev,
+.testimonials-section .carousel-control-next {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background-color: var(--main-color);
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 4px;
 }
