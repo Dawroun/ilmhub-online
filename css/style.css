@@ -285,6 +285,22 @@ h3 {
   color: var(--black-90);
 }
 
+/* ----------------15.breadcrumb------------- */
+
+.breadcrumb-nav {
+  padding: 10px 0;
+}
+
+.breadcrumb-nav .breadcrumb-item {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.breadcrumb-nav .breadcrumb-item + .breadcrumb-item::before,
+.breadcrumb-nav .breadcrumb-item.active {
+  color: var(--black-70);
+}
+
 /* ---------------- 21. =banner section ----------------- */
 
 .banner-section {
@@ -571,10 +587,10 @@ h3 {
   margin-right: 8px;
 }
 
-.footer-bottom{
-  border-top: 1px solid var(--border-color-2 );
+.footer-bottom {
+  border-top: 1px solid var(--border-color-2);
 }
 
-.footer-bottom p{
+.footer-bottom p {
   font-size: 14px;
 }
