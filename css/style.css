@@ -570,6 +570,41 @@ h3 {
   background-color: var(--red-light);
 }
 
+/* ---------------course details ----------------- */
+
+.course-header h2 {
+  font-size: 30px;
+  margin: 0 0 15px;
+  font-weight: 600;
+}
+.course-header .average-rating {
+  font-weight: 600;
+  color: var(--orange);
+}
+.course-header .average-stars i {
+  font-size: 14px;
+  color: var(--orange);
+}
+.course-header .rating span {
+  vertical-align: middle;
+}
+.course-header ul li {
+  margin: 6px 0 0;
+  text-transform: capitalize;
+}
+
+.course-header ul li span {
+  margin-left: 5px;
+}
+
+.course-tabs {
+  margin: 30px 0 20px;
+}
+
+.course-tabs .nav-link {
+  margin: 0 10px 10px 0;
+}
+
 /* ----------------footer----------------- */
 .footer {
   padding: 50px 0 20px;
@@ -633,4 +668,109 @@ h3 {
 
 .footer-bottom p {
   font-size: 14px;
+}
+
+/* course curriculum */
+
+.course-curriculum .accordion-item {
+  border-color: var(--border-color-1);
+  background-color: transparent;
+}
+
+.course-curriculum .accordion-button span {
+  position: absolute;
+  right: 17px;
+  font-size: 14px;
+}
+
+.course-curriculum .accordion-button::after {
+  content: "\f077";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-image: none;
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  width: auto;
+  line-height: 1;
+}
+
+.course-curriculum .accordion-button {
+  background-color: transparent;
+  color: var(--black-90);
+  font-weight: 300;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 160px;
+  line-height: 1.5;
+}
+
+.course-curriculum .accordion-button:focus {
+  box-shadow: none;
+}
+
+.course-curriculum .accordion-button:not(.collapsed) span {
+  font-weight: 500;
+}
+
+.course-curriculum .accordion-button:not(.collapsed)::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.course-curriculum .accordion-button:not(.collapsed) {
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color-1);
+  transition: none;
+  box-shadow: none;
+}
+
+.course-curriculum ul li {
+  position: relative;
+  padding: 0 50px 0 20px;
+}
+.course-curriculum ul li span {
+  position: absolute;
+  font-size: 14px;
+  right: 0;
+  top: 0;
+}
+.course-curriculum ul li i {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: var(--black-70);
+  font-size: 12px;
+}
+
+/* course desciption */
+
+.course-description h4 {
+  font-size: 16px;
+}
+
+/* course-instructor */
+
+.course-instructor .img-box img {
+  max-width: 128px;
+  margin-bottom: 15px;
+}
+
+.course-instructor h4 {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.course-instructor h4 span {
+  font-weight: 300;
+}
+
+.course-instructor ul li i {
+  color: var(--main-color);
+  margin-right: 5px;
+}
+
+.course-instructor ul li:not(:last-child) {
+  margin-bottom: 5px;
 }
