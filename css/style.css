@@ -285,6 +285,23 @@ h3 {
   color: var(--black-90);
 }
 
+/* ----------------14.pagination------------- */
+.page-item.disabled .page-link,
+.page-link {
+  border: none;
+  background-color: transparent;
+  color: var(--black-70);
+}
+
+.page-item.active .page-link {
+  background-color: var(--main-color);
+}
+
+.page-link:hover {
+  background-color: var(--main-color);
+  color: var(--WHITE);
+}
+
 /* ----------------15.breadcrumb------------- */
 
 .breadcrumb-nav {
@@ -299,6 +316,29 @@ h3 {
 .breadcrumb-nav .breadcrumb-item + .breadcrumb-item::before,
 .breadcrumb-nav .breadcrumb-item.active {
   color: var(--black-70);
+}
+
+/* ------------------ tabs-------------------- */
+
+.nav-tabs .nav-link {
+  background-color: var(--white);
+  margin: 0 5px 10px;
+  padding: 5px 12px;
+  text-transform: capitalize;
+  border-color: var(--border-color-2);
+  border-radius: 5px;
+  color: var(--black-70);
+  font-size: 16px;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: var(--black-70);
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--main-color);
+  border-color: transparent;
+  color: var(--WHITE);
 }
 
 /* ---------------- 21. =banner section ----------------- */
