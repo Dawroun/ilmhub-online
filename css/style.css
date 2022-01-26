@@ -513,3 +513,68 @@ h3 {
 .bai-section .circular-img-circle {
   background-color: var(--red-light);
 }
+
+/* ----------------footer----------------- */
+.footer {
+  padding: 50px 0 20px;
+  border-top: 1px solid var(--border-color-2);
+}
+
+.footer-item {
+  margin: 0 0 30px;
+}
+
+.footer-item h3 {
+  text-transform: capitalize;
+  margin: 0 0 20px;
+}
+
+.footer-item .footer-logo {
+  color: var(--black-70);
+  text-transform: uppercase;
+}
+
+.footer-item .footer-logo span {
+  color: var(--main-color);
+}
+
+.footer-item ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer-item ul a {
+  text-transform: capitalize;
+  color: var(--black-70);
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.footer-item ul a:hover {
+  color: var(--main-color);
+}
+
+.footer-item ul a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: var(--main-color);
+  transition: width 0.3s ease;
+}
+
+.footer-item ul a:hover::before {
+  width: 100%;
+}
+.footer-item ul a .social-icon {
+  margin-right: 8px;
+}
+
+.footer-bottom{
+  border-top: 1px solid var(--border-color-2 );
+}
+
+.footer-bottom p{
+  font-size: 14px;
+}
