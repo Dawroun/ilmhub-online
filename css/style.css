@@ -134,6 +134,10 @@ h3 {
   width: 100%;
 }
 
+.btn-form{
+  height: 48px;
+}
+
 /*--------------------------- 11. =circular img ---------------------*/
 .circular-img {
   max-width: 360px;
@@ -163,6 +167,16 @@ h3 {
 }
 
 /* ------------------ 12. =form------------------- */
+
+.form-title{
+  font-size: 24px;
+  margin: 0 0 30px;
+  font-weight: 600;
+}
+
+.form-controll::placeholder{
+  color: var(--black-70);
+}
 
 .form-group {
   margin-bottom: 25px;
