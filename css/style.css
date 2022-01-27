@@ -134,7 +134,7 @@ h3 {
   width: 100%;
 }
 
-.btn-form{
+.btn-form {
   height: 48px;
 }
 
@@ -168,13 +168,13 @@ h3 {
 
 /* ------------------ 12. =form------------------- */
 
-.form-title{
+.form-title {
   font-size: 24px;
   margin: 0 0 30px;
   font-weight: 600;
 }
 
-.form-controll::placeholder{
+.form-controll::placeholder {
   color: var(--black-70);
 }
 
@@ -210,6 +210,11 @@ select.form-control:focus option {
   background-color: var(--select-box-bg-color) l;
 }
 
+textarea.form-control {
+  height: 120px;
+  resize: none;
+}
+
 /* -------------------- 13. = vide modal ---------------- */
 
 .video-modal .btn-close {
@@ -227,7 +232,7 @@ select.form-control:focus option {
   padding: 0;
 }
 
-.video-modal .modal-content{
+.video-modal .modal-content {
   border: 0;
 }
 
@@ -999,4 +1004,26 @@ select.form-control:focus option {
   left: 0;
   top: 9px;
   border-radius: 50%;
+}
+
+/* 27. = contact section */
+
+.contact-item {
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 30px;
+}
+
+.contact-item .icon-box {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  color: var(--WHITE);
 }
